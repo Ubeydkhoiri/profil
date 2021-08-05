@@ -191,13 +191,6 @@ header {
   position: relative;
 }
 
-.porto-img p {
-  position: absolute;
-  top: 85%;
-  width: 100%;
-  color: #5f5d60;
-}
-
 .porto-content {
   width: 80%;
   display: inline-block;
