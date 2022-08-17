@@ -56,7 +56,7 @@ header {
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  height: 650px;
+  height: 700px;
   background-color: #007f5f;
   color: white;
   text-align: center;
@@ -278,7 +278,7 @@ header {
 }
 .image-container {
   width: 2400px;
-  background-color: pink;
+  background-color: #007f5f;
   height: 450px;
   clear: both;
   position: relative;
