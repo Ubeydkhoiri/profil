@@ -4,7 +4,8 @@
 
 body {
   margin: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Segoe UI';
+  color: #000000;
 }
 
 a {
@@ -15,13 +16,6 @@ a {
   clear: left;
 }
 
-.judul {
-  max-width: 800px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .container {
   max-width: 1170px;
   width: 100%;
@@ -29,30 +23,75 @@ a {
   margin: 0 auto;
 }
 
+header {
+  height: 65px;
+  width: 100%;
+  background-color: #007f5f;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(Background.jpg);
-  background-size: cover;
+  height: 650px;
+  background-color: #007f5f;
   color: white;
   text-align: center;
 }
 
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
+.judul {
+  max-width: 800px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
 }
 
-.top-wrapper h2 {
-  opacity: 0.7;
-  font-size: 35px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
+.header-left h2{
+  color: white;
+}
+
+.judul h1 {
+  opacity: 1;
+  font-size: 50px;
+  font-family: 'Segoe UI';
+  text-align: left;
+  color: white;
+}
+
+
+.judul p {
+  opacity: 1;
+  font-size: 20px;
+  font-family: 'Segoe UI';
+  text-align: left;
+  color: white;
+  margin: 5px 0px;
 }
 
 .top-wrapper p {
-  opacity: 0.7;
   margin-bottom: 3px;
 }
 
@@ -95,40 +134,9 @@ a {
   margin-right: 5px;
 }
 
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 1);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-}
-
 .logo {
   width: 124px;
   margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* Tambahkan CSS untuk menu-icon */
@@ -145,14 +153,17 @@ header {
   padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: #f7f7f7;
+  background-color: white;
   text-align: center;
+}
+
+.lesson-wrapper h1{
+  color: #007f5f;
 }
 
 .heading {
   padding-top: 50px;
   padding-bottom: 30px;
-  color: #5f5d60;
 }
 
 .heading h2 {
@@ -161,7 +172,7 @@ header {
 
 .lesson {
   float: left;
-  width: 25%;
+  width: 20%;
 }
 
 .lesson-icon {
@@ -172,7 +183,6 @@ header {
   position: absolute;
   top: 85%;
   width: 100%;
-  color: #5f5d60;
 }
 
 .text-contents {
@@ -180,7 +190,6 @@ header {
   display: inline-block;
   margin-top: 15px;
   font-size: 15px;
-  color: #b3aeb5;
 }
 
 .heading h3 {
@@ -194,6 +203,10 @@ header {
   padding-right: 5%;
   background-color: white;
   text-align: center;
+}
+
+.portofolio-wrapper h1{
+  color: #007f5f;
 }
 
 .portofolio {
@@ -217,13 +230,13 @@ header {
   bottom: -13px;
 	z-index: 2;
 	color: white;
-  background-color: rgba(34, 49, 52, 1);
+  background-color: #007f5f;
   padding-top: 120px;
   opacity: 0;
 }
 
 .portofolio p:hover {
-  opacity: 0.95;
+  opacity: 0.70;
 }
 
 /*Slide Disini*/
@@ -244,78 +257,61 @@ header {
 	animation: 20s slidy infinite;
 }
 
-@keyframes slidy{
-	0%{
-		left: 0%
-	}
+/* CSS Training*/
+.experiences-wrapper {
+  padding-bottom: 80px;
+  text-align: center;
+}
 
-	10%{
-		left: 0%;
-	}
-
-	12%{
-		left: -100%;
-	}
-
-	22%{
-		left: -100%;
-	}
-
-	24%{
-		left: -200%;
-	}
-
-	34%{
-		left: -200%;
-	}
-
-	36%{
-		left: -300%;
-	}
-
-	46%{
-		left: -300%;
-	}
-
-	48%{
-		left: -400%;
-	}
-
-	58%{
-		left: -400%;
-	}
-
-	60%{
-		left: -300%;
-	}
-
-	70%{
-		left: -300%;
-	}
-
-	72%{
-		left: -200%;
-	}
-
-	82%{
-		left: -200%;
-	}
-
-	84%{
-		left: -100%;
-	}
-
-	94%{
-		left: -100%;
-	}
-
-	96%{
-		left: 0%;
-	}
-
-	100%{
-		left: 0%;
-	}
+.experiences-wrapper h1{
+  color: #007f5f;
+}
+.slider {
+  width: 800px;
+  height: 450px;
+  background-color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+.image-container {
+  width: 2400px;
+  background-color: pink;
+  height: 450px;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+.slide {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+#slide-1:target ~ .image-container {
+  left: 0px;
+}
+#slide-2:target ~ .image-container {
+  left: -800px;
+}
+#slide-3:target ~ .image-container {
+  left: -1600px;
+}
+.buttons {
+  position: relative;
+  top: -20px;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: #007f5f;;
 }
 
 /* CSS Message*/
@@ -325,11 +321,18 @@ header {
   text-align: center;
 }
 
+.message-wrapper h1{
+  font-size: 20px;
+  color: #000000;
+  padding-bottom: 0px;
+}
+
 .message {
   padding: 15px 40px;
   background-color: #5dca88;
   cursor: pointer;
-  box-shadow: 0 7px #1a7940;
+  box-shadow: 0 7px #007f5f;
+  margin-right: 10px;
 }
 
 .message:active {
@@ -338,16 +341,33 @@ header {
   box-shadow: none;
 }
 
+.email {
+  padding: 15px 58px;
+  background-color: #ea4335;
+  cursor: pointer;
+  box-shadow: 0 7px #bb001b;
+}
+
+.email:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
 footer img {
-  width: 125px;
+  width: 100px;
+  float: left;
 }
 
 footer p {
-  color: #b3aeb5;
-  font-size: 12px;
+  color: #000000;
+  font-size: 15px;
+  display: inline-flex;
+  float: rigth;
 }
 
 footer {
   padding-top: 30px;
   padding-bottom: 20px;
+  background-color: #007f5f;
 }
